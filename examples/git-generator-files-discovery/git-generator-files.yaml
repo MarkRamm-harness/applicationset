@@ -6,7 +6,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/MarkRamm-harness/applicationset.git
-        revision: HEAD
+        revision: master
         files:
         - path: "examples/git-generator-files-discovery/cluster-config/**/config.json"
   template:
@@ -16,7 +16,7 @@ spec:
       project: aef2786b
       source:
         repoURL: https://github.com/MarkRamm-harness/applicationset.git
-        targetRevision: HEAD
+        targetRevision: master
         path: "examples/git-generator-files-discovery/apps/guestbook"
       destination:
         server: https://kubernetes.default.svc
