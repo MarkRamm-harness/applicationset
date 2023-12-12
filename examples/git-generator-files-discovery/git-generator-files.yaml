@@ -19,7 +19,7 @@ spec:
         targetRevision: master
         path: "examples/git-generator-files-discovery/apps/guestbook"
       kustomize:
-      namePrefix: {{cluster.name}}-
+        namePrefix: {{cluster.name}}-
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
