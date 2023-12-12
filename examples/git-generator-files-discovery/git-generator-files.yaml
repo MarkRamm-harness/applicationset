@@ -18,8 +18,8 @@ spec:
         repoURL: https://github.com/MarkRamm-harness/applicationset.git
         targetRevision: master
         path: "examples/git-generator-files-discovery/apps/guestbook"
-      kustomize:
-        namePrefix: '{{cluster.name}}-'
+        kustomize:
+          namePrefix: '{{cluster.name}}-'
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
