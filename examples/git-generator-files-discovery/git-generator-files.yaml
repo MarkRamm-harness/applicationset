@@ -16,6 +16,7 @@ spec:
       project: aef2786b
       path: "base"
         kustomize:
+          namePrefix: '-'
       source:
         repoURL: https://github.com/argoproj/applicationset.git
         targetRevision: HEAD
