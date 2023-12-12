@@ -14,11 +14,8 @@ spec:
       name: '{{cluster.name}}-guestbook'
     spec:
       project: aef2786b
-      path: "base"
-        kustomize:
-          namePrefix: '-'
       source:
-        repoURL: https://github.com/argoproj/applicationset.git
+        repoURL: https://github.com/MarkRamm-harness/applicationset.git
         targetRevision: HEAD
         path: "examples/git-generator-files-discovery/apps/guestbook"
       destination:
